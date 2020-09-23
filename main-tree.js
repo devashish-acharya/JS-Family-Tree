@@ -3,10 +3,13 @@ childOf = function() {
     return this.parent.map(p => p.name)
 }
 
+
 //me and sis
 const me = {name:'Devashish-Acharya' , parent:[] , childOf}
 const sis = {name:'Sampada-Acharya' , parent:[], childOf}
 const gen1 = [me, sis]
+//tests
+
 
 
 //mum and her siblings
@@ -15,6 +18,8 @@ const aunt1m = {name:'Sarala-Dixit' , parent:[] , childOf}
 const aunt2m = {name:'Karuna-Yadav' , parent:[] , childOf}
 const uncleM = {name:'Anil-Adhikari' , parent:[] , childOf}
 const gen2m = [mum, aunt1m, aunt2m, uncleM]
+//tests
+
 
 
 //dad and his sister
@@ -23,9 +28,11 @@ const auntD = {name: 'Kusum-Pathak' , parent: [], childOf}
 const gen2d = [dad, auntD]
 
 
+
 //grandparents (paternal)
 const granDd = {name:'Damodar-Acharya' , parent:[], childOf}
 const granMd = {name:'Sudha-Acharya' , parent:[] , childOf}
+
 
 
 //grandparents (maternal)
@@ -70,3 +77,7 @@ auntD.childOf = childOf
 aunt1m.childOf = childOf
 aunt2m.childOf = childOf
 uncleM.childOf = childOf
+
+
+//test
+module.exports = [me, sis, auntD, aunt1m, aunt2m, uncleM]
